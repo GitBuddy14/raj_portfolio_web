@@ -1,0 +1,1623 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Raj Dhakoliya | Portfolio</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  @layer base{
+    html,body{margin:0;padding:0;background-color:#070b19;color:#f8fafc;font-family:'Plus Jakarta Sans',sans-serif;}
+    body{overscroll-behavior:none;}
+    main>:first-child{margin-top:0!important;}
+    main>:last-child{margin-bottom:0!important;}
+  }
+  :focus-visible {
+    outline: 2px solid #00d2ff !important;
+    outline-offset: 3px !important;
+  }
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070b19;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1c2b66;
+    border-radius: 9999px;
+    border: 2px solid #070b19;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00d2ff;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #1c2b66 #070b19;
+  }
+  .font-mono-code{font-family:'JetBrains Mono',monospace;}
+  .glow-border{box-shadow:0 0 20px -5px rgba(0,210,255,0.15),inset 0 0 15px -5px rgba(0,210,255,0.05);}
+  .glow-cyan-sm{box-shadow:0 0 15px rgba(0,210,255,0.35);}
+  .glow-cyan-lg{box-shadow:0 0 35px rgba(0,210,255,0.45);}
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        background: "#070b19",
+        surface: "#0a1128",
+        "surface-container-lowest": "#050814",
+        "surface-container-low": "#0c1430",
+        "surface-container": "#111c44",
+        "surface-container-high": "#162254",
+        "surface-container-highest": "#1c2b66",
+        primary: "#00d2ff",
+        "primary-container": "#0099ff",
+        "on-primary": "#040b1a",
+        "on-primary-container": "#ffffff",
+        secondary: "#38bdf8",
+        "secondary-container": "#2563eb",
+        "on-secondary": "#051329",
+        tertiary: "#7dd3fc",
+        "tertiary-container": "#0284c7",
+        "on-surface": "#f8fafc",
+        "on-surface-variant": "#94a3b8",
+        outline: "#1e3a6a",
+        "outline-variant": "#14254b",
+        error: "#f87171"
+      },
+      borderRadius: {
+        DEFAULT: "0.375rem",
+        lg: "0.75rem",
+        xl: "1rem",
+        "2xl": "1.25rem",
+        "3xl": "1.75rem",
+        full: "9999px"
+      },
+      spacing: {
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "space-md": "1rem",
+        "space-lg": "1.5rem",
+        "space-xl": "2.5rem",
+        gutter: "1.5rem",
+        "gutter-mobile": "1rem",
+        margin: "4rem",
+        "margin-tablet": "2rem",
+        "margin-mobile": "1.25rem"
+      }
+    }
+  }
+};
+</script>
+<script id="github-pages-asset-fallback">
+// Dual-location fallback for GitHub Pages (/personal-portfolio/):
+// If images/files are uploaded directly to the repository root instead of assets/, fallback seamlessly
+window.addEventListener('error', function(e) {
+  if (e.target && e.target.tagName === 'IMG') {
+    const src = e.target.getAttribute('src');
+    if (src && !e.target.dataset.fallbackApplied) {
+      e.target.dataset.fallbackApplied = 'true';
+      if (src.startsWith('assets/certificates/')) {
+        e.target.src = src.replace('assets/certificates/', 'certificates/');
+      } else if (src.startsWith('assets/')) {
+        e.target.src = src.replace('assets/', '');
+      }
+    }
+  }
+}, true);
+</script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary/30 selection:text-primary min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+<!-- Header Navigation -->
+<header class="fixed top-0 inset-x-0 z-50 bg-[#070b19]/80 backdrop-blur-2xl border-b border-primary/10 shadow-[0_4px_30px_rgba(0,18,50,0.6)]">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="h-20 flex items-center justify-between gap-space-md">
+<!-- Monogram & Identity -->
+<a class="flex items-center gap-3 group" href="#home">
+<div class="relative flex items-center justify-center p-2 rounded-xl bg-surface-container border border-primary/30 shadow-[0_0_15px_rgba(0,210,255,0.2)] group-hover:border-primary/60 transition-all">
+<img alt="Raj Dhakoliya Monogram Logo" class="h-8 w-auto object-contain" src="assets/logo.png">
+</div>
+<div class="flex flex-col text-left">
+<span class="text-base md:text-lg font-bold text-on-surface tracking-tight group-hover:text-primary transition-colors">Raj Dhakoliya</span>
+<span class="font-mono-code text-[11px] text-primary/80 tracking-widest uppercase">CompEng // Dev</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-1 p-1.5 rounded-full bg-surface-container-low/90 border border-primary/20 backdrop-blur-md glow-border">
+<a aria-current="page" class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-primary to-secondary text-[#040b1a] shadow-[0_0_15px_rgba(0,210,255,0.4)] transition-all duration-200" href="#home">Home</a>
+<a class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-all duration-200" href="#about">About</a>
+<a class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-all duration-200" href="#skills">Skills</a>
+<a class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-all duration-200" href="#projects">Projects</a>
+<a class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-all duration-200" href="#certifications">Certifications</a>
+<a class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-all duration-200" href="#education">Education</a>
+<a class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container-high transition-all duration-200" href="#contact">Contact</a>
+</nav>
+<!-- Right CTAs -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-surface-container border border-primary/20 text-primary hover:bg-surface-container-high hover:border-primary/50 transition-all duration-200" href="#contact">Hire Me</a>
+<a class="inline-flex items-center justify-center px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-primary via-secondary to-primary-container text-[#040b1a] glow-cyan-sm hover:glow-cyan-lg hover:scale-105 transition-all duration-200 cursor-pointer" href="assets/Raj_Dhakoliya_Resume.pdf" onclick="handleResumeClick(event)" target="_blank" title="View Raj Dhakoliya's Resume (PDF)">Resume</a>
+<div class="relative flex items-center justify-center">
+<img alt="" aria-hidden="true" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/60 shadow-[0_0_12px_rgba(0,210,255,0.4)]" src="assets/profile.jpg">
+<span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-primary ring-2 ring-background shadow-[0_0_8px_#00d2ff]"></span>
+</div>
+<!-- Mobile Hamburger Button -->
+<button aria-controls="mobile-nav-menu" aria-expanded="false" aria-label="Toggle navigation menu" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container border border-primary/30 text-primary hover:text-white hover:border-primary/60 hover:bg-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-[#070b19] transition-all cursor-pointer" id="mobile-menu-btn" type="button">
+<span class="material-symbols-outlined text-2xl transition-transform duration-200" id="menu-icon-open">menu</span>
+<span class="material-symbols-outlined text-2xl hidden transition-transform duration-200" id="menu-icon-close">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Navigation Menu Dropdown Drawer -->
+<nav aria-label="Mobile navigation" class="lg:hidden hidden border-t border-primary/15 bg-[#070b19]/95 backdrop-blur-2xl shadow-2xl transition-all duration-300" id="mobile-nav-menu">
+<div class="max-w-7xl mx-auto px-margin-mobile py-4 flex flex-col gap-1.5">
+<a class="mobile-nav-link flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#home">
+<span>Home</span>
+<span class="material-symbols-outlined text-sm text-primary/70">chevron_right</span>
+</a>
+<a class="mobile-nav-link flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#about">
+<span>About</span>
+<span class="material-symbols-outlined text-sm text-primary/70">chevron_right</span>
+</a>
+<a class="mobile-nav-link flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#skills">
+<span>Skills</span>
+<span class="material-symbols-outlined text-sm text-primary/70">chevron_right</span>
+</a>
+<a class="mobile-nav-link flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#projects">
+<span>Projects</span>
+<span class="material-symbols-outlined text-sm text-primary/70">chevron_right</span>
+</a>
+<a class="mobile-nav-link flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#certifications">
+<span>Certifications</span>
+<span class="material-symbols-outlined text-sm text-primary/70">chevron_right</span>
+</a>
+<a class="mobile-nav-link flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#education">
+<span>Education</span>
+<span class="material-symbols-outlined text-sm text-primary/70">chevron_right</span>
+</a>
+<a class="mobile-nav-link flex items-center justify-between px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider text-on-surface-variant hover:text-white hover:bg-surface-container transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#contact">
+<span>Contact</span>
+<span class="material-symbols-outlined text-sm text-primary/70">chevron_right</span>
+</a>
+<div class="pt-3 mt-1 border-t border-primary/10 flex items-center gap-2 sm:hidden">
+<a class="flex-1 py-2 text-center rounded-xl bg-surface-container border border-primary/20 text-xs font-semibold uppercase tracking-wider text-primary hover:bg-surface-container-high transition-all" href="#contact">Hire Me</a>
+<a class="flex-1 py-2 text-center rounded-xl bg-gradient-to-r from-primary to-secondary text-[#040b1a] text-xs font-bold uppercase tracking-wider shadow-sm transition-all cursor-pointer" href="assets/Raj_Dhakoliya_Resume.pdf" onclick="handleResumeClick(event)" target="_blank" title="View Raj Dhakoliya's Resume (PDF)">Resume</a>
+</div>
+</div>
+</nav>
+</header>
+<main class="w-full pt-20 bg-background flex-1 relative">
+<div class="flex flex-col w-full text-on-surface overflow-hidden">
+<!-- Ambient Electric Blue Lighting Orbs -->
+<div class="relative w-full">
+<div class="absolute -top-36 left-1/2 -translate-x-1/2 w-[760px] h-[480px] bg-gradient-to-tr from-primary/15 via-secondary-container/20 to-transparent blur-[140px] pointer-events-none rounded-full"></div>
+<div class="absolute top-[850px] -left-48 w-[520px] h-[520px] bg-primary/10 blur-[150px] pointer-events-none rounded-full"></div>
+<div class="absolute top-[2100px] -right-48 w-[620px] h-[620px] bg-secondary-container/15 blur-[160px] pointer-events-none rounded-full"></div>
+<!-- ========================================== -->
+<!-- 1. HERO SECTION                            -->
+<!-- ========================================== -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-10 md:pt-16 pb-16 lg:pb-24 scroll-mt-24" id="home">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-gutter items-center">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md z-10">
+<!-- Availability Pill -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container/90 border border-primary/30 backdrop-blur-md shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary shadow-[0_0_10px_#00d2ff]"></span>
+</span>
+<span class="font-mono-code text-[11px] text-primary tracking-wide uppercase font-semibold">Available for Internship &amp; Freelance</span>
+</div>
+<!-- Main Greeting & Headline -->
+<div class="flex flex-col gap-2 mt-space-xs">
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
+                Hi, I’m <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-[#60a5fa] drop-shadow-[0_0_25px_rgba(0,210,255,0.4)]">Raj Dhakoliya</span>
+</h1>
+<p class="text-xl sm:text-2xl font-semibold text-secondary tracking-tight">
+                Computer Engineering Student &amp; Aspiring Web Developer
+              </p>
+</div>
+<!-- Punchy Bio Paragraph -->
+<p class="text-base sm:text-lg text-on-surface-variant max-w-2xl leading-relaxed font-normal">
+              Crafting responsive, high-performance web applications and algorithmic solutions. Passionate about turning complex real-world problems into clean, intuitive digital experiences.
+            </p>
+<!-- Primary & Secondary CTA Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-space-xs w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-primary via-secondary to-primary-container text-[#040b1a] shadow-[0_0_25px_rgba(0,210,255,0.45)] hover:shadow-[0_0_35px_rgba(0,210,255,0.7)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200" href="#projects">
+<span>View Projects</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wider bg-surface-container/90 border border-primary/25 text-white hover:text-primary hover:border-primary/60 hover:bg-surface-container-high transition-all duration-200 shadow-sm" href="#contact">
+<span class="material-symbols-outlined text-base text-primary">mail</span>
+<span>Contact Me</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-on-surface-variant hover:text-primary transition-all duration-200 cursor-pointer" href="assets/Raj_Dhakoliya_Resume.pdf" onclick="handleResumeClick(event)" target="_blank" title="Download Raj Dhakoliya's Resume (PDF)">
+<span>Download CV</span>
+<span class="material-symbols-outlined text-base">download</span>
+</a>
+</div>
+<!-- Metrics bar -->
+<div class="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 pt-space-lg mt-space-xs">
+<div class="p-3.5 rounded-xl bg-surface-container/70 border border-primary/15 backdrop-blur-md flex flex-col glow-border">
+<span class="text-2xl font-bold text-primary font-mono-code">10+</span>
+<span class="text-xs text-on-surface-variant font-medium">GitHub Repos</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container/70 border border-primary/15 backdrop-blur-md flex flex-col glow-border">
+<span class="text-2xl font-bold text-secondary font-mono-code">5+</span>
+<span class="text-xs text-on-surface-variant font-medium">Web Projects</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container/70 border border-primary/15 backdrop-blur-md flex flex-col glow-border">
+<span class="text-2xl font-bold text-primary font-mono-code">8.00</span>
+<span class="text-xs text-on-surface-variant font-medium">CGPA Score</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container/70 border border-primary/15 backdrop-blur-md flex flex-col glow-border">
+<span class="text-2xl font-bold text-secondary font-mono-code">100%</span>
+<span class="text-xs text-on-surface-variant font-medium">Passion &amp; Grit</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Profile Showcase Card -->
+<div class="lg:col-span-5 relative flex items-center justify-center mt-space-lg lg:mt-0">
+<!-- Glowing Radial Ring -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-gradient-to-tr from-primary/25 via-secondary-container/20 to-transparent blur-3xl animate-pulse"></div>
+</div>
+<!-- Glass Frame -->
+<div class="relative w-72 sm:w-80 md:w-96 rounded-3xl p-3 bg-surface-container-low/90 border border-primary/30 backdrop-blur-2xl shadow-[0_15px_50px_rgba(0,10,35,0.8)] transition-transform duration-300 hover:scale-[1.01] glow-border">
+<div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-surface-container border border-primary/20">
+<img alt="Raj Dhakoliya Headshot" class="w-full h-full object-cover object-center filter brightness-[1.03] contrast-[1.08]" src="assets/profile.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- Bottom Tag -->
+<div class="absolute bottom-3 left-3 right-3 p-2 rounded-xl bg-surface-container-lowest/80 border border-primary/20 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_6px_#00d2ff]"></span>
+<span class="font-mono-code text-xs text-white">Raj Dhakoliya</span>
+</div>
+<span class="font-mono-code text-[11px] text-primary font-semibold">Dev // Eng</span>
+</div>
+</div>
+<!-- Floating Mini Badges -->
+<div class="absolute -top-4 -right-4 md:-right-6 px-3.5 py-1.5 rounded-full bg-surface-container-high/90 border border-primary/40 backdrop-blur-xl shadow-lg flex items-center gap-2 transform hover:-translate-y-1 transition-transform">
+<span class="text-xs">⚡</span>
+<span class="text-xs text-white font-semibold">Fast Learner</span>
+</div>
+<div class="absolute top-1/2 -left-6 md:-left-10 px-3.5 py-1.5 rounded-full bg-surface-container-high/90 border border-primary/40 backdrop-blur-xl shadow-lg flex items-center gap-2 transform -translate-y-1/2 hover:-translate-y-2 transition-transform">
+<span class="text-xs">💻</span>
+<span class="text-xs text-white font-semibold">Clean Code Architect</span>
+</div>
+<div class="absolute -bottom-4 -left-2 md:-left-4 px-3.5 py-1.5 rounded-full bg-surface-container-high/90 border border-primary/40 backdrop-blur-xl shadow-lg flex items-center gap-2 transform hover:-translate-y-1 transition-transform">
+<span class="text-xs">🎓</span>
+<span class="text-xs text-white font-semibold">CompEng 2028</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. ABOUT ME SECTION                        -->
+<!-- ========================================== -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl scroll-mt-24" id="about">
+<!-- Section Header -->
+<div class="flex flex-col items-start gap-2 mb-space-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-primary/25 backdrop-blur-sm">
+<span class="font-mono-code text-xs text-primary uppercase tracking-widest font-semibold">ABOUT ME</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            Driven by Code, Passionate about Craft
+          </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left narrative column -->
+<div class="lg:col-span-7 flex flex-col gap-4 bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl p-6 md:p-8 rounded-3xl glow-border">
+<div class="flex items-center gap-3">
+<span class="w-9 h-9 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">terminal</span>
+</span>
+<h3 class="text-xl font-bold text-white">The Engineering Mindset</h3>
+</div>
+<p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+              I am a third-year Computer Engineering undergraduate with an insatiable appetite for understanding how digital infrastructure ticks—from the micro-optimizations of algorithms to the fluid aesthetics of modern user interfaces.
+            </p>
+<p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+              My development journey started with curiosity about web interactive components and evolved into mastering core Object-Oriented Principles in Java and building high-performance frontend interfaces. I believe software engineering is not merely writing functional code, but crafting dependable, scalable architectures that deliver seamless human experiences.
+            </p>
+<div class="pt-2 flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 text-on-surface text-xs font-medium">Web Technologies</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 text-on-surface text-xs font-medium">System Performance</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 text-on-surface text-xs font-medium">Data Structures</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 text-on-surface text-xs font-medium">Clean UI/UX</span>
+</div>
+<!-- Highlight Box -->
+<div class="mt-2 p-4 rounded-2xl bg-surface-container border border-primary/30 backdrop-blur-md flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-white">Open to Software Development &amp; Frontend Opportunities</span>
+<p class="text-xs text-on-surface-variant mt-0.5">Enthusiastic Computer Engineering student ready to contribute immediately with high ownership.</p>
+</div>
+</div>
+</div>
+<!-- Right: 3 Glass Cards -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<!-- Card 1: Core Philosophy -->
+<div class="p-6 rounded-2xl bg-surface-container-low/80 border border-primary/15 backdrop-blur-xl hover:border-primary/40 transition-all duration-200 glow-border">
+<div class="flex items-center gap-3 mb-2">
+<span class="p-2 rounded-xl bg-surface-container text-primary flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-lg">lightbulb</span>
+</span>
+<h4 class="text-lg font-bold text-white">Core Philosophy</h4>
+</div>
+<p class="text-sm text-secondary italic font-mono-code">
+                “Write code humans can read and machines execute fast.”
+              </p>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Maintainable abstractions, thoughtful naming conventions, and continuous refactoring are non-negotiable.
+              </p>
+</div>
+<!-- Card 2: What I Bring -->
+<div class="p-6 rounded-2xl bg-surface-container-low/80 border border-primary/15 backdrop-blur-xl hover:border-primary/40 transition-all duration-200 glow-border">
+<div class="flex items-center gap-3 mb-2">
+<span class="p-2 rounded-xl bg-surface-container text-secondary flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-lg">psychology</span>
+</span>
+<h4 class="text-lg font-bold text-white">What I Bring</h4>
+</div>
+<ul class="space-y-1.5 text-xs text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_6px_#00d2ff]"></span>
+<span>Strong CS core (DSA, DBMS, Networks, OS)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_6px_#00d2ff]"></span>
+<span>Disciplined Git branching &amp; PR collaboration</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_6px_#00d2ff]"></span>
+<span>Proactive curiosity &amp; relentless problem-solving</span>
+</li>
+</ul>
+</div>
+<!-- Card 3: Current Focus -->
+<div class="p-6 rounded-2xl bg-surface-container-low/80 border border-primary/15 backdrop-blur-xl hover:border-primary/40 transition-all duration-200 glow-border">
+<div class="flex items-center gap-3 mb-2">
+<span class="p-2 rounded-xl bg-surface-container text-primary flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-lg">rocket_launch</span>
+</span>
+<h4 class="text-lg font-bold text-white">Current Focus</h4>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                Deep-diving into full-stack modern JavaScript ecosystems, Next.js architecture, serverless APIs, and reactive state management patterns.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. TECHNICAL SKILLS SECTION                -->
+<!-- ========================================== -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl scroll-mt-24" id="skills">
+<div class="flex flex-col items-start gap-2 mb-space-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-primary/25 backdrop-blur-sm">
+<span class="font-mono-code text-xs text-primary uppercase tracking-widest font-semibold">SKILLS &amp; EXPERTISE</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            Technologies I Work With
+          </h2>
+<p class="text-sm md:text-base text-on-surface-variant max-w-xl">
+            Core toolset crafted through academic rigor, open-source projects, and hands-on software development.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Frontend Development Category -->
+<div class="p-6 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl flex flex-col justify-between hover:border-primary/50 hover:-translate-y-1 transition-all duration-200 glow-border">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="flex items-center gap-3">
+<div class="p-2.5 rounded-xl bg-primary/15 text-primary border border-primary/30">
+<span class="material-symbols-outlined">devices</span>
+</div>
+<h3 class="text-lg font-bold text-white">Frontend Dev</h3>
+</div>
+<span class="font-mono-code text-[11px] text-primary uppercase tracking-wider font-semibold">Core Stack</span>
+</div>
+<!-- Skill 1 -->
+<div class="mb-4">
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">HTML5</span>
+<span class="font-mono-code text-xs text-primary font-bold">95%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 95%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">Semantic markup, SEO, Accessibility (a11y)</span>
+</div>
+<!-- Skill 2 -->
+<div class="mb-4">
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">CSS3 &amp; Tailwind</span>
+<span class="font-mono-code text-xs text-secondary font-bold">90%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 90%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">Flexbox, CSS Grid, Glassmorphism, Responsive design</span>
+</div>
+<!-- Skill 3 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">JavaScript (ES6+)</span>
+<span class="font-mono-code text-xs text-primary font-bold">85%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 85%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">DOM manipulation, Async/Await, Fetch APIs</span>
+</div>
+</div>
+<div class="mt-5 pt-3 border-t border-primary/10 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-primary">DOM</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-primary">CSS Grid</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-primary">BEM</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-primary">Micro-animations</span>
+</div>
+</div>
+<!-- Programming Languages Category -->
+<div class="p-6 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl flex flex-col justify-between hover:border-primary/50 hover:-translate-y-1 transition-all duration-200 glow-border">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="flex items-center gap-3">
+<div class="p-2.5 rounded-xl bg-secondary/15 text-secondary border border-secondary/30">
+<span class="material-symbols-outlined">data_object</span>
+</div>
+<h3 class="text-lg font-bold text-white">Programming</h3>
+</div>
+<span class="font-mono-code text-[11px] text-secondary uppercase tracking-wider font-semibold">CS Core</span>
+</div>
+<!-- Skill 1 -->
+<div class="mb-4">
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">Java</span>
+<span class="font-mono-code text-xs text-primary font-bold">88%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 88%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">OOP, Data Structures, Collections, Multithreading</span>
+</div>
+<!-- Skill 2 -->
+<div class="mb-4">
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">Python</span>
+<span class="font-mono-code text-xs text-secondary font-bold">82%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 82%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">Scripting, Automation, Algorithms, Data Processing</span>
+</div>
+<!-- Skill 3 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">SQL &amp; Relational DBs</span>
+<span class="font-mono-code text-xs text-primary font-bold">80%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 80%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">Schema Design, Joins, Normalization, Queries</span>
+</div>
+</div>
+<div class="mt-5 pt-3 border-t border-primary/10 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-secondary">OOP</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-secondary">Algorithms</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-secondary">SQL</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-secondary">File I/O</span>
+</div>
+</div>
+<!-- Tools & Workflow Category -->
+<div class="p-6 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl flex flex-col justify-between hover:border-primary/50 hover:-translate-y-1 transition-all duration-200 glow-border md:col-span-2 lg:col-span-1">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="flex items-center gap-3">
+<div class="p-2.5 rounded-xl bg-tertiary-container/20 text-tertiary border border-tertiary/30">
+<span class="material-symbols-outlined">build</span>
+</div>
+<h3 class="text-lg font-bold text-white">Tools &amp; Workflow</h3>
+</div>
+<span class="font-mono-code text-[11px] text-tertiary uppercase tracking-wider font-semibold">DevOps/Env</span>
+</div>
+<!-- Skill 1 -->
+<div class="mb-4">
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">Git &amp; GitHub</span>
+<span class="font-mono-code text-xs text-secondary font-bold">90%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 90%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">Branching, merge resolutions, PRs, version control</span>
+</div>
+<!-- Skill 2 -->
+<div class="mb-4">
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">Developer Tooling</span>
+<span class="font-mono-code text-xs text-primary font-bold">88%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 88%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">VS Code, Chrome DevTools, Postman, Terminal CLI</span>
+</div>
+<!-- Skill 3 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-xs font-semibold text-white">Linux &amp; Environment</span>
+<span class="font-mono-code text-xs text-tertiary font-bold">78%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-1.5 rounded-full bg-gradient-to-r from-secondary to-primary shadow-[0_0_8px_#00d2ff]" style="width: 78%;"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant block mt-1">Bash basics, shell scripting, cross-browser testing</span>
+</div>
+</div>
+<div class="mt-5 pt-3 border-t border-primary/10 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-tertiary">Postman</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-tertiary">Linux CLI</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-tertiary">DevTools</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container border border-primary/15 font-mono-code text-[10px] text-tertiary">npm</span>
+</div>
+</div>
+</div>
+<!-- High-tech Terminal Strip -->
+<div class="mt-space-lg p-4 rounded-2xl bg-[#050814]/90 border border-primary/25 backdrop-blur-md glow-border">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-2 border-b border-primary/10">
+<div class="flex items-center gap-2">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#f59e0b]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981]"></span>
+</div>
+<span class="font-mono-code text-xs text-on-surface-variant ml-2">raj@midnight-box: ~/stack-verification.sh</span>
+</div>
+<span class="font-mono-code text-xs text-primary font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+              STATUS: ALL SYSTEMS OPERATIONAL
+            </span>
+</div>
+<div class="font-mono-code text-xs text-on-surface-variant mt-2.5 leading-relaxed">
+<span class="text-primary font-bold">$</span> git status <span class="text-secondary">→ On branch main. Working tree clean. Ready to push high-performance code.</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. FEATURED PROJECTS SECTION               -->
+<!-- ========================================== -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl scroll-mt-24" id="projects">
+<div class="flex flex-col items-start gap-2 mb-space-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-primary/25 backdrop-blur-sm">
+<span class="font-mono-code text-xs text-primary uppercase tracking-widest font-semibold">FEATURED PROJECTS</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            Featured Work &amp; Case Studies
+          </h2>
+<p class="text-sm md:text-base text-on-surface-variant max-w-xl">
+            Real-world applications built with modern tools, performance benchmarks, and attention to user delight.
+          </p>
+</div>
+<div class="space-y-6">
+<!-- Project 1: Gym & Fitness Web Application -->
+<div class="p-6 md:p-8 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left Info -->
+<div class="lg:col-span-7 flex flex-col items-start gap-3 order-2 lg:order-1">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-primary/15 border border-primary/30 text-primary font-mono-code text-xs uppercase tracking-wider font-semibold">Web Application</span>
+<span class="font-mono-code text-xs text-on-surface-variant">• Jan 2026 — Present</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold text-white group-hover:text-primary transition-colors">
+                  PrimeLife Fitness Gym Website
+                </h3>
+<p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+                  A modern, responsive gym and fitness club website featuring interactive workout plan selectors, a custom membership tier calculator, an interactive class schedule grid, trainer spotlights, and responsive contact registration.
+                </p>
+<!-- Metrics -->
+<div class="flex flex-wrap gap-2 my-1">
+<div class="px-3 py-1 rounded-lg bg-surface-container border border-primary/15 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">speed</span>
+<span class="font-mono-code text-xs text-white">&lt; 0.8s Page Load</span>
+</div>
+<div class="px-3 py-1 rounded-lg bg-surface-container border border-primary/15 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">phone_iphone</span>
+<span class="font-mono-code text-xs text-white">100% Mobile Responsive</span>
+</div>
+<div class="px-3 py-1 rounded-lg bg-surface-container border border-primary/15 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-sm">animation</span>
+<span class="font-mono-code text-xs text-white">Fluid Transitions</span>
+</div>
+</div>
+<!-- Tech Stack Badges -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 font-mono-code text-xs text-primary font-medium">HTML5</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 font-mono-code text-xs text-primary font-medium">CSS3</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 font-mono-code text-xs text-primary font-medium">JavaScript</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 font-mono-code text-xs text-secondary font-medium">Tailwind CSS</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/10 font-mono-code text-xs text-on-surface-variant font-medium">Responsive Design</span>
+</div>
+<!-- Action Links -->
+<div class="flex items-center gap-3 pt-2">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-primary to-secondary text-[#040b1a] glow-cyan-sm hover:glow-cyan-lg hover:scale-105 transition-all cursor-pointer" href="https://gitbuddy14.github.io/Primelifegym.github.io/" rel="noopener noreferrer" target="_blank">
+<span>Live Demo</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-surface-container border border-primary/20 text-white hover:text-primary hover:border-primary/50 transition-all" href="https://github.com/GitBuddy14/Primelifegym.github.io" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm text-primary">code</span>
+<span>View Code</span>
+</a>
+</div>
+</div>
+<!-- Right Visual Mockup -->
+<div class="lg:col-span-5 order-1 lg:order-2">
+<div class="relative rounded-2xl overflow-hidden bg-surface-container border border-primary/30 shadow-2xl group-hover:scale-[1.02] transition-transform duration-300">
+<img alt="Gym and fitness web application mockup" class="w-full h-64 md:h-80 object-cover" src="assets/project-gym.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#050814]/90 border border-primary/40 backdrop-blur-md font-mono-code text-[11px] text-primary font-semibold">
+                    Production Build
+                  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================== -->
+<!-- 💡 FUTURE PROJECT TEMPLATE:                                    -->
+<!-- To add a new project card, duplicate and edit this template:   -->
+<!-- ============================================================== -->
+<!--
+<div class="p-6 md:p-8 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-7 flex flex-col items-start gap-3 order-2 lg:order-1">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-primary/15 border border-primary/30 text-primary font-mono-code text-xs uppercase tracking-wider font-semibold">Web Application</span>
+<span class="font-mono-code text-xs text-on-surface-variant">• Project Date</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold text-white group-hover:text-primary transition-colors">
+Project Title
+</h3>
+<p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+Project description highlighting key features, architectural choices, and problems solved.
+</p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 font-mono-code text-xs text-primary font-medium">Tech 1</span>
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/20 font-mono-code text-xs text-secondary font-medium">Tech 2</span>
+</div>
+<div class="flex items-center gap-3 pt-2">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-primary to-secondary text-[#040b1a] glow-cyan-sm hover:glow-cyan-lg hover:scale-105 transition-all cursor-pointer" href="https://your-demo-url.com" rel="noopener noreferrer" target="_blank">
+<span>Live Demo</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-surface-container border border-primary/20 text-white hover:text-primary hover:border-primary/50 transition-all" href="https://github.com/GitBuddy14/your-repo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm text-primary">code</span>
+<span>View Code</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-2">
+<div class="relative rounded-2xl overflow-hidden bg-surface-container border border-primary/30 shadow-2xl group-hover:scale-[1.02] transition-transform duration-300">
+<img alt="Project screenshot preview" class="w-full h-64 md:h-80 object-cover" src="assets/project-gym.jpg">
+</div>
+</div>
+</div>
+</div>
+-->
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. CERTIFICATIONS & ACHIEVEMENTS SECTION   -->
+<!-- ========================================== -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl scroll-mt-24" id="certifications">
+<div class="flex flex-col items-start gap-2 mb-space-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-primary/25 backdrop-blur-sm">
+<span class="font-mono-code text-xs text-primary uppercase tracking-widest font-semibold">CERTIFICATIONS &amp; ACHIEVEMENTS</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+Verified Credentials &amp; Workshops
+</h2>
+<p class="text-sm md:text-base text-on-surface-variant max-w-xl">
+Official industry credentials, technical job simulations, and verified hands-on workshops across Artificial Intelligence, Cybersecurity, Quantum Computing, and Web3.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Certificate 1: IBM AI -->
+<div class="rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl overflow-hidden flex flex-col justify-between hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="relative overflow-hidden bg-surface-container border-b border-primary/15 aspect-[16/10]">
+<img alt="Getting Started with Artificial Intelligence Certificate - IBM SkillsBuild" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/certificates/cert-ibm-ai.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#050814]/90 border border-primary/40 backdrop-blur-md flex items-center gap-1.5 font-mono-code text-[11px] text-primary font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Credly Verified</span>
+</div>
+</div>
+<div class="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/15 border border-primary/30 text-primary font-mono-code text-[11px] font-semibold">IBM SkillsBuild</span>
+<span class="text-[11px] text-on-surface-variant font-mono-code">Jul 29, 2026</span>
+</div>
+<h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors leading-snug">
+Getting Started with Artificial Intelligence
+</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Fundamentals of Artificial Intelligence, cognitive computing architectures, machine learning concepts, and ethical AI implementation.
+</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-primary to-secondary text-[#040b1a] glow-cyan-sm hover:glow-cyan-lg hover:scale-[1.02] transition-all cursor-pointer" href="assets/certificates/cert-ibm-ai.jpg" rel="noopener noreferrer" target="_blank">
+<span>View</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="inline-flex items-center justify-center gap-1 px-3 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-surface-container border border-primary/20 text-white hover:text-primary hover:border-primary/50 transition-all" href="https://www.credly.com/badges/391a5867-2d95-4a42-b316-c5c27abb0c6e" rel="noopener noreferrer" target="_blank" title="Verify Badge on Credly">
+<span class="material-symbols-outlined text-sm text-primary">verified_user</span>
+<span>Badge</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Certificate 2: IBM Cybersecurity -->
+<div class="rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl overflow-hidden flex flex-col justify-between hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="relative overflow-hidden bg-surface-container border-b border-primary/15 aspect-[16/10]">
+<img alt="Getting Started with Cybersecurity Certificate - IBM SkillsBuild" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/certificates/cert-ibm-cybersecurity.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#050814]/90 border border-primary/40 backdrop-blur-md flex items-center gap-1.5 font-mono-code text-[11px] text-primary font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Credly Verified</span>
+</div>
+</div>
+<div class="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/15 border border-secondary/30 text-secondary font-mono-code text-[11px] font-semibold">IBM SkillsBuild</span>
+<span class="text-[11px] text-on-surface-variant font-mono-code">Jul 29, 2026</span>
+</div>
+<h3 class="text-lg font-bold text-white group-hover:text-secondary transition-colors leading-snug">
+Getting Started with Cybersecurity
+</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Core cybersecurity fundamentals, threat landscapes, defense mechanisms, encryption standards, and digital data protection practices.
+</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-secondary to-tertiary text-[#040b1a] shadow-[0_0_15px_rgba(56,189,248,0.4)] hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] hover:scale-[1.02] transition-all cursor-pointer" href="assets/certificates/cert-ibm-cybersecurity.jpg" rel="noopener noreferrer" target="_blank">
+<span>View</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="inline-flex items-center justify-center gap-1 px-3 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-surface-container border border-primary/20 text-white hover:text-secondary hover:border-primary/50 transition-all" href="https://www.credly.com/badges/680381e7-953e-40de-a75d-d6dff8f5cb1f" rel="noopener noreferrer" target="_blank" title="Verify Badge on Credly">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+<span>Badge</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Certificate 3: IBM Bob Lab -->
+<div class="rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl overflow-hidden flex flex-col justify-between hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="relative overflow-hidden bg-surface-container border-b border-primary/15 aspect-[16/10]">
+<img alt="Lab: Troubleshoot Your Code Using IBM Bob Certificate - IBM SkillsBuild" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/certificates/cert-ibm-bob.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-[#050814]/90 border border-primary/30 backdrop-blur-md font-mono-code text-[11px] text-primary">
+ALM-4071307
+</div>
+</div>
+<div class="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/15 border border-primary/30 text-primary font-mono-code text-[11px] font-semibold">IBM SkillsBuild</span>
+<span class="text-[11px] text-on-surface-variant font-mono-code">29 Jul 2026</span>
+</div>
+<h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors leading-snug">
+Lab: Troubleshoot Your Code Using IBM Bob
+</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Hands-on technical debugging lab utilizing the IBM Bob intelligent assistance platform to detect runtime bottlenecks and optimize source code.
+</p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-surface-container border border-primary/30 text-white hover:text-[#040b1a] hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:border-transparent transition-all cursor-pointer" href="assets/certificates/cert-ibm-bob.jpg" rel="noopener noreferrer" target="_blank">
+<span>View Certificate</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Certificate 4: IBM Quantum Computing -->
+<div class="rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl overflow-hidden flex flex-col justify-between hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="relative overflow-hidden bg-surface-container border-b border-primary/15 aspect-[16/10]">
+<img alt="Exploring Quantum Computing Certificate - IBM SkillsBuild" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/certificates/cert-ibm-quantum.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-[#050814]/90 border border-secondary/30 backdrop-blur-md font-mono-code text-[11px] text-secondary">
+ALM-3825253
+</div>
+</div>
+<div class="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/15 border border-secondary/30 text-secondary font-mono-code text-[11px] font-semibold">IBM SkillsBuild</span>
+<span class="text-[11px] text-on-surface-variant font-mono-code">29 Jul 2026</span>
+</div>
+<h3 class="text-lg font-bold text-white group-hover:text-secondary transition-colors leading-snug">
+Exploring Quantum Computing
+</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Quantum mechanics foundations, quantum gates, superposition, entanglement, and emerging computational paradigms.
+</p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-surface-container border border-primary/30 text-white hover:text-[#040b1a] hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:border-transparent transition-all cursor-pointer" href="assets/certificates/cert-ibm-quantum.jpg" rel="noopener noreferrer" target="_blank">
+<span>View Certificate</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Certificate 5: GDG On Campus Web3 -->
+<div class="rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl overflow-hidden flex flex-col justify-between hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="relative overflow-hidden bg-surface-container border-b border-primary/15 aspect-[16/10]">
+<img alt="Team1 India University Workshop on Web3 and Blockchain Certificate - GDG On Campus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/certificates/cert-gdg-web3.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#050814]/90 border border-primary/40 backdrop-blur-md flex items-center gap-1.5 font-mono-code text-[11px] text-primary font-semibold">
+<span class="material-symbols-outlined text-xs">token</span>
+<span>Web3 &amp; Avalanche</span>
+</div>
+</div>
+<div class="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/15 border border-primary/30 text-primary font-mono-code text-[11px] font-semibold">GDG On Campus • GESCOE</span>
+<span class="text-[11px] text-on-surface-variant font-mono-code">8 Oct 2026</span>
+</div>
+<h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors leading-snug">
+Web3, Blockchain &amp; Avalanche Workshop
+</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Hands-on technical workshop on Web3, decentralized systems, smart contracts, and the Avalanche ecosystem organized by GDGC GESCOE.
+</p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-surface-container border border-primary/30 text-white hover:text-[#040b1a] hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:border-transparent transition-all cursor-pointer" href="assets/certificates/cert-gdg-web3.pdf" rel="noopener noreferrer" target="_blank">
+<span>View PDF Certificate</span>
+<span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+</a>
+</div>
+</div>
+<!-- Certificate 6: Tata & Forage GenAI Data Analytics -->
+<div class="rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl overflow-hidden flex flex-col justify-between hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="relative overflow-hidden bg-surface-container border-b border-primary/15 aspect-[16/10]">
+<img alt="GenAI Powered Data Analytics Job Simulation Certificate - Tata & Forage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/certificates/cert-forage-genai.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[#050814]/90 border border-primary/40 backdrop-blur-md flex items-center gap-1.5 font-mono-code text-[11px] text-primary font-semibold">
+<span class="material-symbols-outlined text-xs">analytics</span>
+<span>Job Simulation</span>
+</div>
+</div>
+<div class="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/15 border border-primary/30 text-primary font-mono-code text-[11px] font-semibold">Tata &amp; Forage</span>
+<span class="text-[11px] text-on-surface-variant font-mono-code">Jun 5, 2026</span>
+</div>
+<h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors leading-snug">
+GenAI Powered Data Analytics Job Simulation
+</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Practical simulation covering exploratory data analysis, risk profiling, delinquency prediction with AI, and AI-driven business strategy.
+</p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-surface-container border border-primary/30 text-white hover:text-[#040b1a] hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:border-transparent transition-all cursor-pointer" href="assets/certificates/cert-forage-genai.pdf" rel="noopener noreferrer" target="_blank">
+<span>View PDF Certificate</span>
+<span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+</a>
+</div>
+</div>
+<!-- ============================================================== -->
+<!-- 💡 FUTURE CERTIFICATE TEMPLATE:                                -->
+<!-- To add a new certificate card, duplicate and edit this template:-->
+<!-- ============================================================== -->
+<!--
+<div class="rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl overflow-hidden flex flex-col justify-between hover:border-primary/50 transition-all duration-300 shadow-xl group glow-border">
+<div class="relative overflow-hidden bg-surface-container border-b border-primary/15 aspect-[16/10]">
+<img alt="Certificate Title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="assets/certificates/cert-ibm-ai.jpg">
+</div>
+<div class="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/15 border border-primary/30 text-primary font-mono-code text-[11px] font-semibold">Issuing Organization</span>
+<span class="text-[11px] text-on-surface-variant font-mono-code">Month Year</span>
+</div>
+<h3 class="text-lg font-bold text-white group-hover:text-primary transition-colors leading-snug">
+Certificate Name
+</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Brief description of skills, topics, or competencies covered.
+</p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-surface-container border border-primary/30 text-white hover:text-[#040b1a] hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:border-transparent transition-all cursor-pointer" href="assets/certificates/cert-gdg-web3.pdf" rel="noopener noreferrer" target="_blank">
+<span>View Certificate</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+-->
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. EDUCATION & ACADEMICS SECTION           -->
+<!-- ========================================== -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl scroll-mt-24" id="education">
+<div class="flex flex-col items-start gap-2 mb-space-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-primary/25 backdrop-blur-sm">
+<span class="font-mono-code text-xs text-primary uppercase tracking-widest font-semibold">EDUCATION</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            Academic Background &amp; Milestones
+          </h2>
+<p class="text-sm md:text-base text-on-surface-variant max-w-xl">
+            Strong theoretical foundations paired with applied computer science engineering coursework.
+          </p>
+</div>
+<div class="relative pl-6 md:pl-10 space-y-8">
+<!-- Rail Line -->
+<div class="absolute left-2.5 md:left-4 top-3 bottom-3 w-0.5 bg-gradient-to-b from-primary via-secondary-container to-primary/20"></div>
+<!-- Timeline Item 1: Degree -->
+<div class="relative group">
+<!-- Pulsing Node Marker -->
+<div class="absolute -left-[1.8rem] md:-left-[2.85rem] top-2 w-6 h-6 rounded-full bg-background border border-primary/50 flex items-center justify-center">
+<span class="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_#00d2ff]"></span>
+</div>
+<div class="p-6 md:p-8 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl hover:border-primary/50 transition-all duration-200 glow-border">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+<span class="px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary font-mono-code text-xs font-semibold w-fit">
+                  2024 — 2028 (Expected)
+                </span>
+<span class="text-xs font-semibold text-secondary font-mono-code">Cumulative Grade: 8.00 / 10 CGPA</span>
+</div>
+<h3 class="text-xl md:text-2xl font-bold text-white mt-1">
+                Bachelor of Engineering (B.E) in Computer Science &amp; Engineering
+              </h3>
+<p class="text-sm md:text-base text-secondary font-medium mt-0.5">
+                Gokhale Education Society’s R.H. Sapat College of Engineering Management Studies &amp; Research, Nashik
+              </p>
+<div class="mt-4">
+<span class="text-xs font-bold uppercase tracking-wider text-on-surface-variant block mb-2.5">Relevant Core Coursework &amp; Competencies:</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+<div class="p-2.5 rounded-xl bg-surface-container border border-primary/15 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span class="text-xs text-on-surface">Data Structures &amp; Algorithms</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container border border-primary/15 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span class="text-xs text-on-surface">OOP in Java</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container border border-primary/15 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span class="text-xs text-on-surface">Database Management (MySQL)</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container border border-primary/15 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="text-xs text-on-surface">Frontend Development</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container border border-primary/15 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="text-xs text-on-surface">Python Programming</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container border border-primary/15 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="text-xs text-on-surface">Git &amp; Version Control</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2: Certifications & Leadership -->
+<div class="relative group">
+<div class="absolute -left-[1.8rem] md:-left-[2.85rem] top-2 w-6 h-6 rounded-full bg-background border border-secondary/40 flex items-center justify-center">
+<span class="w-3 h-3 rounded-full bg-secondary shadow-[0_0_8px_#38bdf8]"></span>
+</div>
+<div class="p-6 md:p-8 rounded-3xl bg-surface-container-low/80 border border-primary/15 backdrop-blur-xl hover:border-primary/40 transition-all duration-200 glow-border">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+<span class="px-3 py-1 rounded-full bg-surface-container border border-primary/15 text-on-surface-variant font-mono-code text-xs w-fit">
+                  2024 — Present
+                </span>
+<span class="text-xs text-on-surface-variant font-mono-code">Certifications &amp; Campus Leadership</span>
+</div>
+<h3 class="text-xl md:text-2xl font-bold text-white mt-1">
+                Trainings, Industry Simulations &amp; Technical Clubs
+              </h3>
+<p class="text-sm md:text-base text-secondary font-medium mt-0.5">
+                IBM Edunet Foundation • Forage • ACES Club &amp; Coding Ninjas 10X
+              </p>
+<div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+<div class="p-3.5 rounded-2xl bg-surface-container border border-primary/15 flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">workspace_premium</span>
+<span class="text-xs font-bold text-white">IBM Edunet Foundation (Jul 2026)</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+3-Day Workshop on AI, Cybersecurity &amp; Quantum Computing. Built conversational BOB AI shopping agent with prompt engineering.
+</p>
+</div>
+<div class="p-3.5 rounded-2xl bg-surface-container border border-primary/15 flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">insights</span>
+<span class="text-xs font-bold text-white">Forage GenAI Analytics (Jun 2026)</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+GenAI Powered Data Analytics Job Simulation. Exploratory Data Analysis, predictive modeling &amp; AI-driven decision making.
+</p>
+</div>
+<div class="p-3.5 rounded-2xl bg-surface-container border border-primary/15 flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-sm">campaign</span>
+<span class="text-xs font-bold text-white">Social Media Head — ACES Club</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Led digital outreach, social media branding, and event communications for the Association of Computer Engineering Students (RHSCOE).
+</p>
+</div>
+<div class="p-3.5 rounded-2xl bg-surface-container border border-primary/15 flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">code</span>
+<span class="text-xs font-bold text-white">Coding Ninjas 10X Club Member</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+Active participant in algorithmic challenges, collaborative development sessions, and peer-to-peer coding bootcamps.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. CONTACT & HIRE ME SECTION               -->
+<!-- ========================================== -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl scroll-mt-24" id="contact">
+<div class="flex flex-col items-start gap-2 mb-space-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-primary/25 backdrop-blur-sm">
+<span class="font-mono-code text-xs text-primary uppercase tracking-widest font-semibold">GET IN TOUCH</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+            Let’s Build Something Amazing Together
+          </h2>
+<p class="text-sm md:text-base text-on-surface-variant max-w-xl">
+            Interested in discussing an internship, junior engineering role, or exciting freelance build? My inbox is always open.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left: Contact Details & Badges -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<div class="p-6 md:p-8 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl flex flex-col gap-4 glow-border">
+<div class="flex items-center gap-3">
+<div class="p-3 rounded-2xl bg-primary/15 border border-primary/30 text-primary">
+<span class="material-symbols-outlined text-2xl">send</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-white">Contact Info</h3>
+<span class="text-xs text-primary font-mono-code">Quick response within 24h</span>
+</div>
+</div>
+<!-- Email Item -->
+<a class="p-3.5 rounded-2xl bg-surface-container border border-primary/15 flex items-center gap-3 hover:border-primary/40 transition-colors group" href="mailto:rajdhakoliya254@gmail.com">
+<span class="material-symbols-outlined text-primary text-xl group-hover:scale-110 transition-transform">mail</span>
+<div class="flex flex-col min-w-0">
+<span class="text-[11px] text-on-surface-variant">Direct Email</span>
+<span class="text-xs md:text-sm font-semibold text-white truncate group-hover:text-primary transition-colors">rajdhakoliya254@gmail.com</span>
+</div>
+</a>
+<!-- Location / Phone -->
+<div class="p-3.5 rounded-2xl bg-surface-container border border-primary/15 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-xl">location_on</span>
+<div class="flex flex-col">
+<span class="text-[11px] text-on-surface-variant">Location &amp; Phone</span>
+<span class="text-xs md:text-sm font-semibold text-white">Nashik, Maharashtra, India • +91 7666152953</span>
+</div>
+</div>
+<!-- Opportunities Callout Box -->
+<div class="p-4 rounded-2xl bg-gradient-to-br from-primary/10 via-secondary-container/20 to-transparent border border-primary/30 shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">campaign</span>
+<div>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider">Internship &amp; Project Inquiries</h4>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                    Actively open to Software Development &amp; Frontend Engineering opportunities and collaborative projects.
+                  </p>
+</div>
+</div>
+<!-- Social handles row -->
+<div class="pt-1 flex items-center gap-2">
+<a class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container border border-primary/15 hover:border-primary/40 text-white flex items-center justify-center gap-2 text-xs font-semibold hover:text-primary transition-colors" href="https://github.com/GitBuddy14" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base text-primary">code</span>
+<span>GitHub</span>
+</a>
+<a class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container border border-primary/15 hover:border-primary/40 text-white flex items-center justify-center gap-2 text-xs font-semibold hover:text-secondary transition-colors" href="https://www.linkedin.com/in/raj-dhakoliya-346817374" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base text-secondary">hub</span>
+<span>LinkedIn</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right: Glassmorphic Contact Form -->
+<div class="lg:col-span-7">
+<div class="p-6 md:p-8 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl shadow-xl glow-border">
+<h3 class="text-xl font-bold text-white mb-1">Send a Direct Message</h3>
+<p class="text-xs md:text-sm text-on-surface-variant mb-6">
+                Whether you have an internship position, a freelance question, or just want to say hi!
+              </p>
+<form action="https://formspree.io/f/xwlvazdb" class="space-y-4" id="portfolio-contact-form" method="POST" novalidate>
+<!-- Anti-spam Honeypot Field -->
+<input autocomplete="off" name="_gotcha" style="display:none !important" tabindex="-1" type="text" aria-hidden="true">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Name -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider font-mono-code" for="user-name">Your Name</label>
+<input aria-describedby="err-user-name" autocomplete="name" class="w-full h-11 px-4 rounded-xl bg-surface-container border border-primary/20 text-white placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-all" id="user-name" name="name" placeholder="e.g. Alex Henderson" required type="text">
+<span class="text-[11px] text-error hidden" id="err-user-name">Please enter your name (min 2 characters).</span>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider font-mono-code" for="user-email">Your Email</label>
+<input aria-describedby="err-user-email" autocomplete="email" class="w-full h-11 px-4 rounded-xl bg-surface-container border border-primary/20 text-white placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-all" id="user-email" name="email" placeholder="alex@techcorp.com" required type="email">
+<span class="text-[11px] text-error hidden" id="err-user-email">Please enter a valid email address.</span>
+</div>
+</div>
+<!-- Subject -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider font-mono-code" for="user-subject">Subject</label>
+<input aria-describedby="err-user-subject" autocomplete="off" class="w-full h-11 px-4 rounded-xl bg-surface-container border border-primary/20 text-white placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-all" id="user-subject" name="subject" placeholder="e.g. Software Engineering Opportunity" required type="text">
+<span class="text-[11px] text-error hidden" id="err-user-subject">Please enter a subject (min 3 characters).</span>
+</div>
+<!-- Message -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider font-mono-code" for="user-message">Message</label>
+<textarea aria-describedby="err-user-message" class="w-full p-4 rounded-xl bg-surface-container border border-primary/20 text-white placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm resize-none transition-all" id="user-message" name="message" placeholder="Hi Raj, we came across your projects and would love to chat about..." required rows="4"></textarea>
+<span class="text-[11px] text-error hidden" id="err-user-message">Please write a brief message (min 10 characters).</span>
+</div>
+<!-- Action Row -->
+<div class="flex flex-col sm:flex-row gap-3 pt-1">
+<button class="flex-1 py-3.5 px-6 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-primary via-secondary to-primary-container text-[#040b1a] glow-cyan-sm hover:glow-cyan-lg hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed" id="submit-btn" type="submit">
+<span id="submit-btn-text">Send Message</span>
+<span class="material-symbols-outlined text-base" id="submit-btn-icon">send</span>
+</button>
+<a class="py-3 px-5 rounded-full text-xs font-semibold uppercase tracking-wider bg-surface-container border border-primary/20 text-primary hover:text-white hover:bg-surface-container-high hover:border-primary/50 flex items-center justify-center gap-2 transition-all duration-200" href="mailto:rajdhakoliya254@gmail.com?subject=Portfolio%20Inquiry" id="direct-email-btn" title="Open in default mail client">
+<span class="material-symbols-outlined text-sm">mail</span>
+<span>Mail App</span>
+</a>
+</div>
+<div class="hidden p-3.5 rounded-xl bg-surface-container border border-primary/30 text-primary text-xs font-medium text-center font-mono-code leading-relaxed" id="form-status" role="status" aria-live="polite">
+✨ Thank you! Your message has been received. Raj will get back to you soon.
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Polished Midnight Navy Footer -->
+<footer class="w-full bg-[#050814] border-t border-primary/15 mt-space-xl relative">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
+<div class="flex items-center gap-3">
+<div class="p-1.5 rounded-lg bg-surface-container border border-primary/20">
+<img alt="Raj Dhakoliya Monogram Logo" class="h-6 w-auto object-contain opacity-90" src="assets/logo.png">
+</div>
+<span class="text-lg font-bold text-white tracking-tight">Raj Dhakoliya</span>
+</div>
+<p class="text-xs text-on-surface-variant max-w-sm leading-relaxed">
+          Computer Engineering student crafting modern web experiences, high-performance distributed systems, and intuitive user interfaces.
+        </p>
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-x-3.5 gap-y-1.5 pt-1 text-xs font-mono-code text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#home">Home</a>
+<a class="hover:text-primary transition-colors" href="#about">About</a>
+<a class="hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="hover:text-primary transition-colors" href="#certifications">Certifications</a>
+<a class="hover:text-primary transition-colors" href="#education">Education</a>
+<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+</div>
+<div class="flex flex-col items-center md:items-end gap-3">
+<div class="flex items-center gap-2.5">
+<a aria-label="GitHub Profile" class="flex items-center justify-center w-9 h-9 rounded-full bg-surface-container border border-primary/15 text-on-surface-variant hover:text-primary hover:border-primary/50 hover:bg-surface-container-high transition-all duration-200" href="https://github.com/GitBuddy14" rel="noopener noreferrer" target="_blank" title="GitHub (@GitBuddy14)">
+<span class="material-symbols-outlined text-base">code</span>
+</a>
+<a aria-label="LinkedIn Profile" class="flex items-center justify-center w-9 h-9 rounded-full bg-surface-container border border-primary/15 text-on-surface-variant hover:text-secondary hover:border-primary/50 hover:bg-surface-container-high transition-all duration-200" href="https://www.linkedin.com/in/raj-dhakoliya-346817374" rel="noopener noreferrer" target="_blank" title="LinkedIn Profile">
+<span class="material-symbols-outlined text-base">hub</span>
+</a>
+<a aria-label="Direct Email" class="flex items-center justify-center w-9 h-9 rounded-full bg-surface-container border border-primary/15 text-on-surface-variant hover:text-primary hover:border-primary/50 hover:bg-surface-container-high transition-all duration-200" href="mailto:rajdhakoliya254@gmail.com?subject=Portfolio%20Inquiry" title="Email Raj Dhakoliya">
+<span class="material-symbols-outlined text-base">mail</span>
+</a>
+<a aria-label="WhatsApp Contact" class="flex items-center justify-center w-9 h-9 rounded-full bg-surface-container border border-primary/15 text-on-surface-variant hover:text-primary hover:border-primary/50 hover:bg-surface-container-high transition-all duration-200" href="https://wa.me/917666152953" rel="noopener noreferrer" target="_blank" title="WhatsApp (+91 7666152953)">
+<span class="material-symbols-outlined text-base">chat</span>
+</a>
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-mono-code text-on-surface-variant hover:text-primary transition-colors group" href="#home">
+<span class="group-hover:-translate-y-0.5 transition-transform duration-200 material-symbols-outlined text-sm text-primary">arrow_upward</span>
+<span>Back to top</span>
+</a>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-primary/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+<p class="text-xs text-on-surface-variant font-mono-code">© 2025 Raj Dhakoliya. All rights reserved.</p>
+<div class="flex items-center gap-2 font-mono-code text-[11px] text-on-surface-variant">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary animate-pulse shadow-[0_0_6px_#00d2ff]"></span>
+<span>Available for Internships &amp; Full-Time Roles</span>
+</div>
+</div>
+</div>
+</footer>
+<script id="navigation-controller">
+(function() {
+  // Mobile Hamburger Toggle & Keyboard Handling
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-nav-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  function openMenu() {
+    if (!menuBtn || !mobileMenu) return;
+    menuBtn.setAttribute('aria-expanded', 'true');
+    mobileMenu.classList.remove('hidden');
+    if (iconOpen) iconOpen.classList.add('hidden');
+    if (iconClose) iconClose.classList.remove('hidden');
+  }
+
+  function closeMenu() {
+    if (!menuBtn || !mobileMenu) return;
+    menuBtn.setAttribute('aria-expanded', 'false');
+    mobileMenu.classList.add('hidden');
+    if (iconOpen) iconOpen.classList.remove('hidden');
+    if (iconClose) iconClose.classList.add('hidden');
+  }
+
+  function toggleMenu() {
+    if (!menuBtn) return;
+    const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+    if (isExpanded) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', toggleMenu);
+
+    // Close when selecting any link in the mobile menu
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Close on Escape key and return focus to button
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        menuBtn.focus();
+      }
+    });
+
+    // Close when clicking outside of the header
+    document.addEventListener('click', (e) => {
+      const header = document.querySelector('header');
+      if (header && !header.contains(e.target) && menuBtn.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+      }
+    });
+  }
+
+  // Active Navigation Highlighting with IntersectionObserver
+  const sectionIds = ['home', 'about', 'skills', 'projects', 'certifications', 'education', 'contact'];
+  const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+  const desktopLinks = document.querySelectorAll('header nav.lg\\:flex a[href^="#"]');
+  const mobileLinks = document.querySelectorAll('#mobile-nav-menu .mobile-nav-link');
+
+  const desktopActive = ['bg-gradient-to-r', 'from-primary', 'to-secondary', 'text-[#040b1a]', 'shadow-[0_0_15px_rgba(0,210,255,0.4)]'];
+  const desktopInactive = ['text-on-surface-variant', 'hover:text-white', 'hover:bg-surface-container-high'];
+
+  const mobileActive = ['bg-primary/20', 'text-primary', 'border-primary/40', 'font-bold'];
+  const mobileInactive = ['text-on-surface-variant', 'hover:text-white', 'hover:bg-surface-container'];
+
+  function updateActiveNav(activeId) {
+    desktopLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === '#' + activeId) {
+        link.setAttribute('aria-current', 'page');
+        link.classList.remove(...desktopInactive);
+        link.classList.add(...desktopActive);
+      } else {
+        link.removeAttribute('aria-current');
+        link.classList.remove(...desktopActive);
+        link.classList.add(...desktopInactive);
+      }
+    });
+
+    mobileLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === '#' + activeId) {
+        link.setAttribute('aria-current', 'page');
+        link.classList.remove(...mobileInactive);
+        link.classList.add(...mobileActive);
+      } else {
+        link.removeAttribute('aria-current');
+        link.classList.remove(...mobileActive);
+        link.classList.add(...mobileInactive);
+      }
+    });
+  }
+
+  if ('IntersectionObserver' in window && sections.length > 0) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-80px 0px -55% 0px',
+      threshold: [0, 0.2, 0.5]
+    };
+
+    let visibleSections = new Map();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          visibleSections.set(entry.target.id, entry.intersectionRatio);
+        } else {
+          visibleSections.delete(entry.target.id);
+        }
+      });
+
+      if (visibleSections.size > 0) {
+        let bestId = null;
+        let lowestTop = Infinity;
+        visibleSections.forEach((_, id) => {
+          const el = document.getElementById(id);
+          if (el) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= window.innerHeight * 0.5 && rect.top < lowestTop) {
+              lowestTop = rect.top;
+              bestId = id;
+            }
+          }
+        });
+        if (bestId) {
+          updateActiveNav(bestId);
+        } else {
+          const firstKey = visibleSections.keys().next().value;
+          if (firstKey) updateActiveNav(firstKey);
+        }
+      }
+    }, observerOptions);
+
+    sections.forEach(sec => observer.observe(sec));
+  }
+})();
+</script>
+<!-- Interactive Toast Notification Container -->
+<div id="portfolio-toast" class="fixed bottom-6 right-6 z-50 max-w-sm px-4 py-3 rounded-2xl bg-[#0a1128]/95 border border-primary/40 backdrop-blur-xl shadow-[0_10px_35px_rgba(0,10,35,0.8)] text-white text-xs font-medium flex items-center gap-3 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none glow-border" role="alert" aria-live="polite">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0" id="toast-icon">info</span>
+<span class="leading-relaxed" id="toast-message">Notification message</span>
+</div>
+<script id="contact-and-interactivity">
+// Interactive Toast Notification System
+function showToast(message, icon = 'info') {
+  const toast = document.getElementById('portfolio-toast');
+  const toastMsg = document.getElementById('toast-message');
+  const toastIcon = document.getElementById('toast-icon');
+  if (!toast || !toastMsg) return;
+
+  toastMsg.textContent = message;
+  if (toastIcon) toastIcon.textContent = icon;
+
+  toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+  toast.classList.add('opacity-100', 'translate-y-0');
+
+  clearTimeout(toast._timeout);
+  toast._timeout = setTimeout(() => {
+    toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+    toast.classList.remove('opacity-100', 'translate-y-0');
+  }, 4500);
+}
+
+// Project Live Demo Handler
+function handleDemoClick(event, projectName) {
+  event.preventDefault();
+  showToast(`🚀 Live demo for "${projectName}" is currently in preparation. Explore GitHub profile for updates!`, 'rocket_launch');
+}
+
+// Resume PDF Handler
+function handleResumeClick(event) {
+  event.preventDefault();
+  const resumeUrl = 'assets/Raj_Dhakoliya_Resume.pdf';
+  showToast('📄 Opening Raj Dhakoliya’s Resume (PDF)...', 'description');
+  window.open(resumeUrl, '_blank');
+}
+
+// Contact Form Validation & State Recovery
+(function() {
+  const form = document.getElementById('portfolio-contact-form');
+  if (!form) return;
+
+  const nameInput = document.getElementById('user-name');
+  const emailInput = document.getElementById('user-email');
+  const subjectInput = document.getElementById('user-subject');
+  const messageInput = document.getElementById('user-message');
+  const submitBtn = document.getElementById('submit-btn');
+  const btnText = document.getElementById('submit-btn-text');
+  const btnIcon = document.getElementById('submit-btn-icon');
+  const formStatus = document.getElementById('form-status');
+
+  const errName = document.getElementById('err-user-name');
+  const errEmail = document.getElementById('err-user-email');
+  const errSubject = document.getElementById('err-user-subject');
+  const errMessage = document.getElementById('err-user-message');
+
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function validateForm() {
+    let isValid = true;
+
+    // Validate Name (min 2 chars)
+    if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+      if (errName) errName.classList.remove('hidden');
+      nameInput.classList.add('border-error');
+      isValid = false;
+    } else {
+      if (errName) errName.classList.add('hidden');
+      nameInput.classList.remove('border-error');
+    }
+
+    // Validate Email
+    if (!validateEmail(emailInput.value.trim())) {
+      if (errEmail) errEmail.classList.remove('hidden');
+      emailInput.classList.add('border-error');
+      isValid = false;
+    } else {
+      if (errEmail) errEmail.classList.add('hidden');
+      emailInput.classList.remove('border-error');
+    }
+
+    // Validate Subject (min 3 chars)
+    if (!subjectInput.value.trim() || subjectInput.value.trim().length < 3) {
+      if (errSubject) errSubject.classList.remove('hidden');
+      subjectInput.classList.add('border-error');
+      isValid = false;
+    } else {
+      if (errSubject) errSubject.classList.add('hidden');
+      subjectInput.classList.remove('border-error');
+    }
+
+    // Validate Message (min 10 chars)
+    if (!messageInput.value.trim() || messageInput.value.trim().length < 10) {
+      if (errMessage) errMessage.classList.remove('hidden');
+      messageInput.classList.add('border-error');
+      isValid = false;
+    } else {
+      if (errMessage) errMessage.classList.add('hidden');
+      messageInput.classList.remove('border-error');
+    }
+
+    return isValid;
+  }
+
+  // Real-time input clearing of errors
+  [nameInput, emailInput, subjectInput, messageInput].forEach(input => {
+    if (!input) return;
+    input.addEventListener('input', () => {
+      input.classList.remove('border-error');
+      const err = document.getElementById('err-' + input.id);
+      if (err) err.classList.add('hidden');
+    });
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (!validateForm()) {
+      showToast('⚠️ Please correct the highlighted fields before sending.', 'error');
+      return;
+    }
+
+    const senderName = nameInput.value.trim();
+
+    // Loading State: disable submit to prevent duplicate submissions
+    submitBtn.disabled = true;
+    if (btnText) btnText.textContent = 'Sending Message...';
+    if (btnIcon) {
+      btnIcon.textContent = 'progress_activity';
+      btnIcon.classList.add('animate-spin');
+    }
+    if (formStatus) formStatus.classList.add('hidden');
+
+    const formspreeEndpoint = form.getAttribute('action') || 'https://formspree.io/f/xwlvazdb';
+    const formData = new FormData(form);
+
+    fetch(formspreeEndpoint, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(async (response) => {
+      if (response.ok) {
+        // Success State
+        if (btnText) btnText.textContent = 'Message Sent Successfully!';
+        if (btnIcon) {
+          btnIcon.textContent = 'check_circle';
+          btnIcon.classList.remove('animate-spin');
+        }
+        submitBtn.classList.remove('from-primary', 'via-secondary', 'to-primary-container');
+        submitBtn.classList.add('bg-emerald-500', 'text-white');
+
+        if (formStatus) {
+          formStatus.className = 'p-3.5 rounded-xl bg-surface-container border border-emerald-500/40 text-emerald-400 text-xs font-medium text-center font-mono-code leading-relaxed';
+          formStatus.textContent = `✨ Thank you, ${senderName}! Your message has been sent to Raj via Formspree. You will receive a reply soon.`;
+          formStatus.classList.remove('hidden');
+        }
+
+        showToast(`✨ Message sent! Thanks for reaching out, ${senderName}.`, 'check_circle');
+        form.reset();
+
+        // UX Recovery: Restore submit button after 4 seconds
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          if (btnText) btnText.textContent = 'Send Message';
+          if (btnIcon) btnIcon.textContent = 'send';
+          submitBtn.classList.remove('bg-emerald-500', 'text-white');
+          submitBtn.classList.add('from-primary', 'via-secondary', 'to-primary-container');
+        }, 4000);
+      } else {
+        const data = await response.json().catch(() => ({}));
+        let errorMsg = 'Delivery failed';
+        if (data && data.errors && data.errors.length) {
+          errorMsg = data.errors.map(e => e.message).join(', ');
+        }
+        throw new Error(errorMsg);
+      }
+    })
+    .catch((err) => {
+      // Failure State: Never claim sent, PRESERVE entered inputs
+      submitBtn.disabled = false;
+      if (btnText) btnText.textContent = 'Try Again';
+      if (btnIcon) {
+        btnIcon.textContent = 'refresh';
+        btnIcon.classList.remove('animate-spin');
+      }
+      submitBtn.classList.remove('from-primary', 'via-secondary', 'to-primary-container');
+      submitBtn.classList.add('bg-rose-500/20', 'text-rose-400', 'border', 'border-rose-500/40');
+
+      if (formStatus) {
+        formStatus.className = 'p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/40 text-rose-300 text-xs font-medium text-center font-mono-code leading-relaxed';
+        formStatus.textContent = `⚠️ Message delivery failed (${err.message || 'Network error'}). Your inputs have been preserved. You can try again or use the Mail App button below.`;
+        formStatus.classList.remove('hidden');
+      }
+
+      showToast('⚠️ Delivery failed. Please try again or use Mail App.', 'error');
+
+      // Reset button styling after 4s while preserving user-entered values
+      setTimeout(() => {
+        if (btnText && btnText.textContent === 'Try Again') btnText.textContent = 'Send Message';
+        if (btnIcon && btnIcon.textContent === 'refresh') btnIcon.textContent = 'send';
+        submitBtn.classList.remove('bg-rose-500/20', 'text-rose-400', 'border', 'border-rose-500/40');
+        submitBtn.classList.add('from-primary', 'via-secondary', 'to-primary-container');
+      }, 4000);
+    });
+  });
+})();
+</script>
+</body></html>

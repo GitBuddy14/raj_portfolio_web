@@ -1,0 +1,11 @@
+# Backups and temporary files
+*.backup.html
+*.bak
+portfolio-default.html
+portfolio-light.html
+screenshot-*.png
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
